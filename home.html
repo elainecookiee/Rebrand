@@ -11,11 +11,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Martel:300|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" ype="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" ype="text/css" href="css/main.css"/>
 
-	<title>Elaine Tran -UX/UI Portfolio</title>
+
+	<title>Elaine Tran | UX/UI Portfolio</title>
 
 	<link rel="shortcut icon" href="images/profile.png" />
 
@@ -44,51 +45,62 @@
 <body>
 
 <!-- nav -->
-<nav>
+
 <img src="images/elaine-logo.svg" id="elaine-logo" alt="elaine logo">
-<ul class="top-nav">
-    <li><a class="active" href="#">Home</a></li>
-    <li><a href="#">Process</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Resume</a></li>
-</ul>
+
+<nav role="navigation">    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <a href="#" class="active"><li>Home</li></a>
+      <a href="#"><li>Process</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Contact</li></a>
+    </ul>
 </nav>
+
+
 
 <!-- Intro -->
 <div class="intro">
-	<h2>I'm Elaine, Product UX Designer</h2>
+<!-- 	<h2><span class="header">Hello! I'm Elaine, Product UX Designer.</span></h2> -->
+	<div class="typewriter">
+		<h1>I'm Elaine, Product UX Designer.</h1>
+	</div>
 	<p>Currently Lead Product Designer at Venngage building tools to empower everyday people to create captivating visual content. What excites me most? Simplifying complex systems and designing products that work for people.</p>
 </div>
 
 <!-- Gallery -->
 
-<section>
+<section class="project-box">
 
 	<div class="row1">
 		<a href="#"><img src="images/teamcat.png" class="card"></a>
-		<p class="description">Project 1</br>Currently Lead Product Designer at Venngage building tools to empower everyday people</p>
+		<p class="description"><span class="primary">Team Cat Rescue</span></br><span class="secondary">Currently Lead Product Designer at Venngage building tools to empower everyday people</span></p>
 	</div>
 
 	<div class="row1">
 		<a href="#"><img src="images/boarding.png" class="card"></a>
-		<p class="description">Project 1</br>Currently Lead Product Designer at Venngage building tools to empower everyday people</p>
+		<p class="description"><span class="primary">Travel App Prototype</span></br><span class="secondary">Currently Lead Product Designer at Venngage building tools to empower everyday people</span></p>
 	</div>
 
 	<div class="row2">
 		<a href="#"><img src="images/fruitails.png" class="card"></a>
-		<p class="description">Project 1</br>Currently Lead Product Designer at Venngage building tools to empower everyday people</p>
+		<p class="description"><span class="primary">Fruitails Interactive Game</span></br><span class="secondary">Currently Lead Product Designer at Venngage building tools to empower everyday people<span class="primary"></p>
 	</div>
 
 	<div class="row2">
 		<a href="#"><img src="images/travel.png" class="card"></a>
-		<p class="description">Project 1</br>Currently Lead Product Designer at Venngage building tools to empower everyday people</p>
+		<p class="description"><span class="primary">My Travel Inspo</span></br><span class="secondary">Currently Lead Product Designer at Venngage building tools to empower everyday people</span></p>
 	</div>
 
 </section>
 
-<footer>
-	<p>Interested in chatting? Drop a message at elainetran.tran@gmail.com</p>
-</footer>
+<div class="footer">
+    <p>Interested in chatting? Drop a message at <a class="body underline" href="mailto:elainetran.tran@gmail.com?subject=Saying%20Hello!">elainetran.tran@gmail.com</a></p>
+</div>
 
 </body>
 
