@@ -27,33 +27,33 @@ h6 { font-size: 1em; }
 
 /*Fonts --------------------------------------------------------------*/
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 2;
-    letter-spacing: .02em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: .02em;
 }
 
 .header {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
 }
 
 .primary {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #333;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #333;
 }
 
 .secondary {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: #999;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #999;
 }
 
 .caption {
-    font-style: italic;
-    text-align: center;
+  font-style: italic;
+  text-align: center;
 }
 
 .underline {
@@ -81,7 +81,7 @@ a:hover {
 /*Hamburger Menu --------------------------------------------------------------*/
 
 
-
+/*Typewriter --------------------------------------------------------------*/
 
 .typewriter h1 {
   color: #666666;
@@ -179,7 +179,6 @@ a:hover {
   background-color: #F7F7F7;
 }
 
-
 img.card{
   width: 100%;
   box-shadow: 0 10px 22px rgba(0,0,0,.08);
@@ -188,13 +187,9 @@ img.card{
 
 .row1, .row2{
   margin: auto;
-  width: 90%;
+  width: 100%;
 /*  padding-bottom: 1em;*/
 }
-
-/*.description{
-  visibility: hidden;
-}*/
 
 footer{
   text-align: center;
@@ -202,6 +197,22 @@ footer{
   background-color: #F7F7F7;
   padding: 5em 3em;
 }
+
+.process{
+  margin-top: 8em;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.process-image{
+  width: 90%;
+  margin: 1em auto;
+}
+
 
 /*Media Queries --------------------------------------------------------------*/
 @media (min-width: 960px) {
@@ -239,6 +250,11 @@ footer{
     box-shadow: none;
   }
 
+  .project-center{
+    display: flex;
+    justify-content: center;
+  }
+
   .row1, .row2 {
     margin: 1em;
     width: 40%;
@@ -253,6 +269,9 @@ footer{
     padding: 1em;
   }
 
+  .process-image{
+    width: 60%;
+  }
 }
 
 @media (min-width: 600px) and (orientation: landscape){
