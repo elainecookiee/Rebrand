@@ -24,7 +24,6 @@ h4 { font-size: 1.44em }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1em; }
 
-a.active { color:blue; }
 
 
 /*Fonts --------------------------------------------------------------*/
@@ -230,6 +229,28 @@ footer{
   margin: 1em auto;
 }
 
+/*Case study styling*/
+
+.back-arrow{
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  width: 6%;
+}
+
+.casestudy-image{
+  width:100%;
+}
+
+.section{
+  padding: 1em;
+  margin: auto;
+}
+
+.section img{
+  width: 100%;
+}
+
 
 /*Media Queries --------------------------------------------------------------*/
 
@@ -289,6 +310,18 @@ footer{
 
   .process-image{
     width: 60%;
+  }
+
+  .back-arrow{
+    width: 2%;
+  }
+
+  .section{
+    width: 40%;
+  }
+
+  .section img{
+    width: 100%;
   }
 }
 

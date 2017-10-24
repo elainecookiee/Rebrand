@@ -1,0 +1,117 @@
+<!doctype html>
+<!-- html5.js for IE less than 9 --> <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3- mediaqueries.js"></script>
+<![endif]-->
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Martel:300|Montserrat" rel="stylesheet">
+<link rel="stylesheet" ype="text/css" href="css/reset.css"/>
+<link rel="stylesheet" ype="text/css" href="css/main.css"/>
+
+<title>Elaine Tran | UX/UI Portfolio</title>
+
+<link rel="shortcut icon" href="images/profile.png" />
+
+<!-- for Google -->
+<meta name="description" content="Elaine Tran's Responsive Resume" />
+<meta name="keywords" content=“Mobile, User Experience, User Interface, Design, Developer, Technology" />    
+<meta name="author" content=“Elaine Tran" />
+<link rel="author" href="https://plus.google.com/u/1/+ElaineTran1/">
+<meta name="copyright" content="Content by Elaine Tran 2017" />
+
+<!-- for Facebook -->          
+<meta property="og:title" content=“Elaine Tran" />
+<meta property="og:url" content="http://elainetran.me/resume.html" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content=“UX/UI Designer" />
+<meta property="og:image" content="images/profile.png" />
+
+<!-- for Twitter -->          
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Elaine Tran- UX/UI Designer Resume" />
+<meta name="twitter:description" content="UX/UI Designer | Front-End Dev // Post-grad @SheridanIMM | Psych @UWaterloo // Looking for New Opportunities" />
+<meta name="twitter:url" content="http://elainetran.me/resume.html" />
+<meta name="twitter:image" content="images/profile.png" /> 
+
+</head>
+
+<body>
+    <nav>
+        <ul class="back-arrow">
+            <li><a href="home.html"><img class="home" src="images/icons/back-arrow.svg"/></a></li>
+        </ul>
+    </nav>
+
+<!--CASE STUDY -->
+
+    <div>
+        <img class="casestudy-image" src="images/fruitails.png"/>
+        <div class="section">
+            <h2><span class="header">Fruitails</span></h2>
+            <p><span class="secondary">UX/UI Design | Animation</span></p>
+            <p>Fruitails is a split screen catch game with an interactive mat controller created for a Tech Studio Design course. Players control the movement of two characters, which their feet, at the same time. There are four buttons on the mat used as arrow keys. LED lights are synced with all key press to indicate that the mat is responsive.</p>
+            <a class="underline" target="_blank" href="http://gongme.dev.fast.sheridanc.on.ca/fruitail/">View the Website</a> | <a class="underline" target="_blank" href="#">See Github</a></p>
+        </div>
+    </div>
+
+    <div>
+        <div class="section">
+            <h2><span class="header">My Role</span></h2>
+            <p>I worked with a graphic designer for this project. We were both interested in creating a technology that would make physical activity more fun and engaging for beginners.</p>
+            <p>I worked on the instructions screen, background assets and animation with CreateJS libraries as well as the design/implementation of the interactive mat controller.</p>
+            <p>Requirements: A proposal, alpha preview, presentation, final write-up and a <a href="https://github.com/mengsigong/Fruitails">gitHub tutorial</a></p>
+            <img src= "images/fruitails/ft_full.png"/>
+            <img src= "images/fruitails/ft_controller.png"/>
+        </div>
+        <div class="section">
+            <h2><span class="header">The Challenge</span></h2>
+            <p>For our first Tech Studio Design project, we had the time, resources and a lot of great technology to use. Our challenge was building a proof of concept and the project flow.</p>
+            <img src= "images/fruitails/ft_sketch.jpg"/>
+            <p><span class="caption">testing a caption</span></p>
+        </div>
+        <div class="section">
+            <h2><span class="header">The Approach</span></h2>
+            <p>We built a paper prototype of the mat with foil tape and conductive thread. This would ensure that keypress events and LED lights worked the way we wanted before having it transferred to the working prototype.</p>
+            <p>For the game, we animated on the HTML5 Canvas with the zim.js and EaselJS external libraries.</p>
+            <img src= "images/fruitails/ft_paper.png"/>
+        </div>
+        <div class="section">
+            <h2><span class="header">The Stumbles</span></h2>
+            <p>Using Arduinos for keypress events would require an extra usb keyboard. We decided to use the Makey Makey board instead for its durability.</p>
+            <p>The new interface for V1.2 made the remapping process a lot simpler. However, the tutorials we needed for connecting the Makey Makey board to LED lights were for the Classic version. We decided to remap the Classic version by modifying the code using an Arduino IDE Firmware.</p>
+            <img src= "images/fruitails/ft_makey.png"/>
+            <p>After successfully connecting one light using pin D14, we tried to use D16 to connect to extra lights using the same method. However, D16 is defaulted to mouse events, which is not used in our case. We solved this problem by extending GND and D14 to an external breadboard so that we can connect to multiple lights instead of using different pins on one board.</p>
+            <p><strong>Game:</strong> Setting random falling objects within four individual columns. Controlling the falling speed and time to manage the game difficulty. Objects staying on stage after falling, slowing down the game. Overlapping apples/pears with traps (rocks), hit test sometimes not working. Set capacity for score bar to progress to next level</p>
+            <img src= "images/fruitails/ft_game.png"/>
+        </div>
+        <div class="section">
+            <h2><span class="header">The Victories</span></h2>
+            <p>While researching conductive material, we went from pressure sensors to using foil tape and conductive thread which greatly expanded the area that players can use. It was also less costly and more durable than the other options we researched such as Velostat or conductive fabric.</p>
+            <p>We got two LED lights to light up when extending keyboard pins into the breadboard.</p>
+            <img src= "images/fruitails/ft_lights.png"/>
+            <p>The design of the buttons were well thought out. All the seams from the threads were hidden by sewing within the mat material. The conductive thread created a path from each button to the center of the mat, which solved our concern with having too many wires.</p>
+            <img src= "images/fruitails/ft_wires.png"/>
+            <p>Extending the ‘ground’ of the Makey Makey by connecting alligator clips also did not seem to take away from the player’s experience.</p>
+        </div>
+        <div class="section">
+            <h2><span class="header">Learnings</span></h2>
+            <p>Building the game itself was a collaborative task. We would witness our game break over and over again but then we would see it start to work the way it should. We also created all of the assets for the game as we saw it come to life.</p>
+            <br/>
+            <img src= "images/fruitails/ft_demo.png"/>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a id="l" href="boarding.html"><img src="images/icon-left.svg"><h5>Previous</h5></a>
+        <a id="r" href="foodcuisine.html"><h5>Next</h5><img src="images/icon-right.svg"></a> 
+    </div>
+
+
+    </body>
+</html>
